@@ -2,7 +2,6 @@ package com.sunzheng.day2;
 
 import com.sunzheng.day1.ByteBufferUtil;
 import lombok.extern.slf4j.Slf4j;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -16,7 +15,7 @@ import java.util.Iterator;
 /**
  * 主要解决客户端发送消息过长超过buffer 16位的限制
  */
-@Slf4j(topic = "server.")
+@Slf4j(topic = "server")
 public class ServerSelector3 {
     private static void split(ByteBuffer source) {
 

@@ -13,9 +13,7 @@ public class Demo1 {
     }
     @Test
     public void  test1() {
-        List<OOMObject> list=new ArrayList<>();
-        while (true){
-            list.add(new OOMObject());
-        }
+        int i = Runtime.getRuntime().availableProcessors();
+        System.out.println(i);
     }
 }

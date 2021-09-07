@@ -1,5 +1,6 @@
 package com.sunzheng.day2;
 
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -28,6 +29,7 @@ public class Server {
          while (true){
              //4. accept 建立与客户端连接，SockerChanel 用来与客户端之间通讯
              log.debug("conecting....");
+
              SocketChannel sc=ssc.accept(); //进行阻塞，如果有客户端进来才会往下执行
              log.debug("connected...{}",sc);
              channels.add(sc);
